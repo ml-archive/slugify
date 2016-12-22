@@ -10,6 +10,16 @@ Update your `Package.swift` file.
 .Package(url: "https://github.com/nodes-vapor/slugify", majorVersion: 0)
 ```
 
+```
+import Slugiy
+```
+
+```
+print("My test URL æøå".slugify())
+
+prints: my-test-url-aeoa
+```
+
 ## 🏆 Credits
 This package is developed and maintained by the Vapor team at [Nodes](https://www.nodes.dk).
 
