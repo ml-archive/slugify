@@ -4,14 +4,19 @@ import XCTest
 class SlugifyTests: XCTestCase {
     static var allTests = [
         ("test", test),
-        ("testRegular", testRegular)
+        ("testRegular", testRegular),
+        ("testAE", testAE),
     ]
     
     func test() {
-        XCTAssertEqual(2+2, 4)
+        XCTAssertEqual("abc", "abc")
     }
     
     func testRegular() {
         XCTAssertEqual("abc", "abc".slugify())
+    }
+    
+    func testAE() {
+        XCTAssertEqual("abcae", "abcæ".slugify())
     }
 }
