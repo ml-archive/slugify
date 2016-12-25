@@ -8,7 +8,7 @@ class SlugifyTests: XCTestCase {
     ]
     
     func test() {
-        expect("test", toReturn: "test")
+        XCTAssertEqual(2+2, 4)
     }
     
     func testSpace() {
