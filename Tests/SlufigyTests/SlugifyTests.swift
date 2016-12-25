@@ -3,15 +3,15 @@ import XCTest
 
 class SlugifyTests: XCTestCase {
     static var allTests = [
-        ("test", test)
-        //("testSpace", testSpace)
+        ("test", test),
+        ("testRegular", testRegular)
     ]
     
     func test() {
         XCTAssertEqual(2+2, 4)
     }
     
-    func testSpace() {
-        expect("a a".slugify(), toReturn: "a-a")
+    func testRegular() {
+        XCTAssertEqual("abc", "abc".slugify())
     }
 }
