@@ -112,7 +112,8 @@ extension String {
         "UE": ["Ü"],
         "YA": ["Я"],
         "YU": ["Ю"],
-        "ZH": ["Ж"]
+        "ZH": ["Ж"],
+        "-": [" "]
         
         /*
          TODO
@@ -131,18 +132,23 @@ extension String {
         // Copy
         var copy = self
         
-        // Loop through and replace
+        // Loop through replacements
         for (key, list) in String.replaceChars {
             for value in list {
                 copy = copy.replacingOccurrences(of: value, with: key)
             }
         }
         
+        // Lower case
+        copy = copy.lowercased()
+        
+        /*
         let cocoaString = NSMutableString(string: copy.lowercased()) as CFMutableString
         CFStringTransform(cocoaString, nil, kCFStringTransformToLatin, false)
         CFStringTransform(cocoaString, nil, kCFStringTransformStripCombiningMarks, false)
+        */
         
-        return String(cocoaString)
+        return copy
             .components(separatedBy: String.allowedCharacters.inverted)
             .filter { $0 != "" }
             .joined(separator: "-")
