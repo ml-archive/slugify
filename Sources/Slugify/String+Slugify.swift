@@ -142,13 +142,12 @@ extension String {
         // Lower case
         copy = copy.lowercased()
         
-        /*
-        let cocoaString = NSMutableString(string: copy.lowercased()) as CFMutableString
-        CFStringTransform(cocoaString, nil, kCFStringTransformToLatin, false)
-        CFStringTransform(cocoaString, nil, kCFStringTransformStripCombiningMarks, false)
-        */
         
-        return copy
+        let nsString = NSMutableString(string: copy) as CFMutableString
+        CFStringTransform(nsString, nil, kCFStringTransformToLatin, false)
+        CFStringTransform(nsString, nil, kCFStringTransformStripCombiningMarks, false)
+        
+        return String(nsString)
             .components(separatedBy: String.allowedCharacters.inverted)
             .filter { $0 != "" }
             .joined(separator: "-")
