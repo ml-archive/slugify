@@ -6,6 +6,12 @@ class SlugifyTests: XCTestCase {
         ("test", test),
         ("testRegular", testRegular),
         ("testAE", testAE),
+        ("testOE", testOE),
+        ("testUnderscore", testUnderscore),
+        ("testSpecialChar1", testSpecialChar1),
+        ("testSpecialChar2", testSpecialChar2),
+        ("testSpecialChar3", testSpecialChar3),
+        ("testSpecialChar4", testSpecialChar4),
     ]
     
     func test() {
@@ -18,5 +24,29 @@ class SlugifyTests: XCTestCase {
     
     func testAE() {
         XCTAssertEqual("abcae", "abcæ".slugify())
+    }
+    
+    func testOE() {
+        XCTAssertEqual("abco", "abcø".slugify())
+    }
+    
+    func testUnderscore() {
+        XCTAssertEqual("a_a", "a_a".slugify())
+    }
+    
+    func testSpecialChar1() {
+        XCTAssertEqual("a-a", "a^a".slugify())
+    }
+    
+    func testSpecialChar2() {
+        XCTAssertEqual("a-a", "a`a".slugify())
+    }
+    
+    func testSpecialChar3() {
+        XCTAssertEqual("a-a", "a:a".slugify())
+    }
+    
+    func testSpecialChar4() {
+        XCTAssertEqual("a-a", "a€a".slugify())
     }
 }
