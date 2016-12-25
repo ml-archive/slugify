@@ -3,12 +3,15 @@ import XCTest
 
 class SlugifyTests: XCTestCase {
     static var allTests = [
-        ("testSpace", testSpace)
+        ("test", test)
+        //("testSpace", testSpace)
     ]
     
-    func testSpace() {
-        
+    func test() {
+        expect("test", toReturn: "test")
+    }
     
+    func testSpace() {
         expect("a a".slugify(), toReturn: "a-a")
     }
 }
