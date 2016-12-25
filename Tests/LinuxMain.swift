@@ -1,9 +1,6 @@
 import XCTest
-@testable import StorageTests
+@testable import SlugifyTests
 
 XCTMain([
-    testCase(StorageTests.allTests), 
-    testCase(FileEntityTests.allTests),
-    testCase(TemplateTests.allTests),
-    testCase(PathBuilderTests.allTests)
+    testCase(SlugifyTests.allTests)
 ])
