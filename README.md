@@ -9,7 +9,7 @@ Update your `Package.swift` file.
 ```swift
 .Package(url: "https://github.com/nodes-vapor/slugify", majorVersion: 0)
 ```
- 
+
 ```
 import Slugiy
 ```
