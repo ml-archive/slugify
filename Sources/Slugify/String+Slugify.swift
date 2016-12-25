@@ -1,7 +1,7 @@
 import Foundation
 
 extension String {
-    private static let allowedCharacters = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-")
+    private static let allowedCharacters = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyz0123456789-_")
     
     private static let replaceChars: [String: [String]] = [
         "0": ["°", "₀", "۰"],
@@ -142,12 +142,7 @@ extension String {
         // Lower case
         copy = copy.lowercased()
         
-        
-        let nsString = NSMutableString(string: copy) as CFMutableString
-        CFStringTransform(nsString, nil, kCFStringTransformToLatin, false)
-        CFStringTransform(nsString, nil, kCFStringTransformStripCombiningMarks, false)
-        
-        return String(nsString)
+        return copy
             .components(separatedBy: String.allowedCharacters.inverted)
             .filter { $0 != "" }
             .joined(separator: "-")
