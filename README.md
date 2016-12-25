@@ -7,7 +7,7 @@
 ## Integration
 Update your `Package.swift` file.
 ```swift
-.Package(url: "https://github.com/nodes-vapor/slugify", majorVersion: 0)
+.Package(url: "https://github.com/nodes-vapor/slugify", majorVersion: 1)
 ```
 
 ```
