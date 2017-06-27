@@ -18,11 +18,11 @@ Update your `Package.swift` file.
 
 ## Getting started 🚀
 
-```
+```swift
 import Slugiy
 ```
 
-```
+```swift
 print("My test URL æøå".slugify())
 
 prints: my-test-url-aeoa
