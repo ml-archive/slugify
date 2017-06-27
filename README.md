@@ -24,9 +24,9 @@ import Slugiy
 
 ```swift
 print("My test URL æøå".slugify())
-
-prints: my-test-url-aeoa
 ```
+
+The above code will print: `my-test-url-aeoa`
 
 
 ## 🏆 Credits
