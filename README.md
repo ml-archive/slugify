@@ -1,7 +1,8 @@
 # Slugify
 [![Swift Version](https://img.shields.io/badge/Swift-3.1-brightgreen.svg)](http://swift.org)
 [![Vapor Version](https://img.shields.io/badge/Vapor-2-F6CBCA.svg)](http://vapor.codes)
-[![Build Status](https://img.shields.io/circleci/project/github/nodes-vapor/slugify.svg)](https://circleci.com/gh/nodes-vapor/slugify)
+[![Linux Build Status](https://img.shields.io/circleci/project/github/nodes-vapor/slugify.svg?label=Linux)](https://circleci.com/gh/nodes-vapor/slugify)
+[![macOS Build Status](https://img.shields.io/travis/nodes-vapor/slugify.svg?label=macOS)](https://travis-ci.org/nodes-vapor/slugify)
 [![codebeat badge](https://codebeat.co/badges/52c2f960-625c-4a63-ae63-52a24d747da1)](https://codebeat.co/projects/github-com-nodes-vapor-slugify)
 [![codecov](https://codecov.io/gh/nodes-vapor/slugify/branch/master/graph/badge.svg)](https://codecov.io/gh/nodes-vapor/slugify)
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/nodes-vapor/slugify)](http://clayallsopp.github.io/readme-score?url=https://github.com/nodes-vapor/slugify)
