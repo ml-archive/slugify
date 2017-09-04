@@ -20,7 +20,7 @@ Update your `Package.swift` file.
 ## Getting started 🚀
 
 ```swift
-import Slugiy
+import Slugify
 ```
 
 ```swift
