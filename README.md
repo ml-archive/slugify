@@ -1,5 +1,5 @@
 # Slugify
-[![Swift Version](https://img.shields.io/badge/Swift-3-brightgreen.svg)](http://swift.org)
+[![Swift Version](https://img.shields.io/badge/Swift-4.2-brightgreen.svg)](http://swift.org)
 [![Vapor Version](https://img.shields.io/badge/Vapor-2-F6CBCA.svg)](http://vapor.codes)
 [![Circle CI](https://circleci.com/gh/nodes-vapor/slugify/tree/master.svg?style=shield)](https://circleci.com/gh/nodes-vapor/slugify)
 [![codebeat badge](https://codebeat.co/badges/fcd2b9a6-3966-435a-b35c-cf18812d6d1f)](https://codebeat.co/projects/github-com-nodes-vapor-slugify-master)
