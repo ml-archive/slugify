@@ -15,7 +15,7 @@ This package is independent of Vapor and can be used for all Swift projects up t
 
 Update your `Package.swift` file.
 ```swift
-.package(url: "https://github.com/nodes-vapor/slugify", from: "1.0.0")
+.package(url: "https://github.com/nodes-vapor/slugify", from: "2.0.0")
 ```
 
 
