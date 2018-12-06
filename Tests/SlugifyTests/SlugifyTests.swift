@@ -49,4 +49,8 @@ class SlugifyTests: XCTestCase {
     func testSpecialChar4() {
         XCTAssertEqual("a-a", "a€a".slugify())
     }
+
+    func testSpace() {
+        XCTAssertEqual("a-a", "a a".slugify())
+    }
 }

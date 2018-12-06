@@ -1,6 +1,7 @@
 # Slugify
+[![Swift Version](https://img.shields.io/badge/Swift-4-brightgreen.svg)](http://swift.org)
 [![Swift Version](https://img.shields.io/badge/Swift-3-brightgreen.svg)](http://swift.org)
-[![Vapor Version](https://img.shields.io/badge/Vapor-2-F6CBCA.svg)](http://vapor.codes)
+[![Vapor Version](https://img.shields.io/badge/Vapor-3-30B6FC.svg)](http://vapor.codes)
 [![Circle CI](https://circleci.com/gh/nodes-vapor/slugify/tree/master.svg?style=shield)](https://circleci.com/gh/nodes-vapor/slugify)
 [![codebeat badge](https://codebeat.co/badges/fcd2b9a6-3966-435a-b35c-cf18812d6d1f)](https://codebeat.co/projects/github-com-nodes-vapor-slugify-master)
 [![codecov](https://codecov.io/gh/nodes-vapor/slugify/branch/master/graph/badge.svg)](https://codecov.io/gh/nodes-vapor/slugify)
@@ -10,9 +11,11 @@
 
 ## 📦 Installation
 
+This package is independent of Vapor and can be used for all Swift projects up til version 4.2
+
 Update your `Package.swift` file.
 ```swift
-.Package(url: "https://github.com/nodes-vapor/slugify", majorVersion: 1)
+.package(url: "https://github.com/nodes-vapor/slugify", from: "2.0.0")
 ```
 
 
