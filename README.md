@@ -1,4 +1,4 @@
-# Slugify :abcd:
+# Slugify :abc:
 [![Swift Version](https://img.shields.io/badge/Swift-4-brightgreen.svg)](http://swift.org)
 [![Swift Version](https://img.shields.io/badge/Swift-3-brightgreen.svg)](http://swift.org)
 [![Vapor Version](https://img.shields.io/badge/Vapor-3-30B6FC.svg)](http://vapor.codes)
